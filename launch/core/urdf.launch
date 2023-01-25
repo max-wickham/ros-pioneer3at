@@ -1,6 +1,7 @@
 <launch>
 
-  <param name="Pioneer3AT/urdf" command="$(find xacro)/xacro.py $(find pioneer3at)/urdf/pioneer3at.xacro" />
+  <param name="Pioneer3AT/urdf" command="$(find xacro)/xacro $(find pioneer3at)/urdf/pioneer3at.xacro" />
+  
    
   <node pkg="robot_state_publisher" type="state_publisher" name="Pioneer3AT_tf_broadcaster"> 
     <param name="tf_prefix" type="string" value="Pioneer3AT"/>
