@@ -37,7 +37,7 @@ sudo docker exec -it hcr bash
 
 - It might also be a good idea to add the following to your bashrc as it needs to be run every time a terminal to the container is opened (unfortunately the bashrc used by the container is the same as your normal install, not sure how to change this)
 ```
-sudo docker exec -i hcr bash
+source /opt/ros/noetic/setup.bash
 ```
 
 ### PA3T Example
