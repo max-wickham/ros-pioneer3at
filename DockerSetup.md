@@ -29,6 +29,12 @@ sudo docker stop hcr
 sudo docker start -i hcr
 ```
 
+- To install dependencies
+```
+sudo apt-get update
+sudo apt-get install ros-noetic-desktop-full
+```
+
 - To create an additional terminal to access the container run (maybe make an alias for this in your bashrc to save typing it each time)
 ```
 sudo docker exec -it hcr bash
